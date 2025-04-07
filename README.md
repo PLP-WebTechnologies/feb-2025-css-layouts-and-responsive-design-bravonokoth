@@ -1,26 +1,21 @@
-# CSS Layouts and Responsive Design
+# Responsive Layout with Flexbox
 
-## Objectives
+This project demonstrates the use of Flexbox and CSS media queries to create a responsive webpage layout with a navigation bar, content area, and sidebar.
 
-Implement Flexbox and Grid for layout design.
-Make the webpage responsive using media queries.
-Ensure proper alignment and spacing.
+## Features:
+- Navigation Bar
+- Flexbox Layout for Content and Sidebar
+- Media Queries for Responsive Design
 
-## Instructions
+## How to Run:
+1. Clone this repository to your local machine.
+2. Open `index.html` in your browser.
 
-- use Flexbox or CSS Grid.
-- Add a navigation bar and structure the content.
-- Use media queries to adjust layout for mobile, tablet, and desktop.
+## Media Queries:
+- Mobile: `max-width: 600px`
+- Tablet: `min-width: 601px and max-width: 1024px`
+- Desktop: `min-width: 1025px`
 
->[!NOTE]
->  - Include at least:
->  - navigation bar
->  - media queries
-
-# Tasks
-
-- Apply Flexbox or Grid for layout.
-- Make the page responsive.
-- Test across different screen sizes.
-
-Happy Coding! 💻✨
+## Technologies Used:
+- HTML
+- CSS (Flexbox)

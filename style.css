@@ -1,0 +1,136 @@
+/* Base styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #333;
+    padding: 30px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end; /* Right-align the nav items */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; 
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Wrapper and container to hold the sidebar and content */
+.wrapper {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: flex-start; /* Align the sidebar and content to the left */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 25%; /* Sidebar takes 25% of the container width */
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.content {
+    width: 70%; 
+    background-color: white;
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile (up to 600px) */
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .wrapper {
+        flex-direction: column; /* Stack sidebar and content vertically on small screens */
+        align-items: center;
+    }
+
+    .sidebar, .content {
+        width: 100%;
+    }
+}
+
+/* Tablet (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar {
+        width: 30%; /* Sidebar takes up 30% of the container width on tablet */
+    }
+
+    .content {
+        width: 65%; /* Content takes 65% on tablet */
+    }
+}
+
+/* Desktop (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .navbar ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .content {
+        width: 70%;
+    }
+}
